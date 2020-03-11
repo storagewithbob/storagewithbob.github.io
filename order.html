@@ -21,24 +21,14 @@
             <h2 class="title">Storage with Bob</h2>
         </header>
         <section class="container">
-            <h5 id="pay"><b>Payment Summary</b></h5>
-            <p>
-                <span id="cubic-ft"></span> Cubic Ft.
-            </p>
-            <p>
-                $10 / cubic ft <span style="font-size: 1.2rem;">+ 4% Paypal Transaction Fee</span>
-            </p>
-            <p>
-                $<span id="total-price"></span> Total Price
-            </p>
+            <h5 id="pay"><b>How much storage space are you paying for?</b></h5>
+            <form action="/pay.html">
+              <fieldset>
+                <label for="cf">Cubic Ft</label>
+                <input type="text" id="cf" placeholder="Enter a number">
+                <input class="button-primary" type="submit" value="Submit">
+              </fieldset>
+            </form>
         </section>
-        <hr/>
-        <section class="container">
-            <h5 id="pay"><b>Pay with Credit Card</b></h5>
-            <div id="paypal-button-container"></div>
-        </section>
-        <hr/>
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-    <script src="js/pay.js"></script>
   </body>
 </html>

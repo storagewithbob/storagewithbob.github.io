@@ -30,6 +30,15 @@ a {
     border-color: #008fff;
 }
 
+input[type="text"]:focus {
+    border-color: #008fff;
+}
+
+input[type="submit"] {
+    background-color: #008fff;
+    border-color: #008fff;
+}
+
 hr {
     border-top-width: 0.4rem;
     border-color: #008fff;
