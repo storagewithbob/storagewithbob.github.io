@@ -18,7 +18,7 @@ function renderPaypalButtons(amount) {
         application_context: {
             "shipping_preference": "NO_SHIPPING",
             "return_url": "https://storagewithbob.github.io/payment_success.html",
-            "cancel_url": "https://storagewithbob.github.io/pre-pay.html",
+            "cancel_url": "https://storagewithbob.github.io/order.html",
         },
         purchase_units: [{
             amount: {

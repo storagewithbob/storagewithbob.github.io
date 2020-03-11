@@ -22,6 +22,10 @@ a {
     color: #008fff;
 }
 
+.title > a {
+    color: #606c76;
+}
+
 .button {
     display: block;
     margin: 0 auto;
