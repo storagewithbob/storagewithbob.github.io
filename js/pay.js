@@ -49,9 +49,9 @@ function renderPaypalButtons(amount) {
         window.location.replace('order.html');
         return;
     }
-    var cubicFtInt = parseInt(cubicFtString);
+    var cubicFtInt = parseFloat(cubicFtString);
     if (cubicFtInt === NaN || cubicFtInt <= 0) { 
-        alert('Query parameter for cubic feet must be a positive integer.');
+        alert('Query parameter for cubic feet must be a positive number.');
         window.location.replace('order.html');
         return;
     }
