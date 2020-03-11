@@ -46,11 +46,13 @@ function renderPaypalButtons(amount) {
     var cubicFtString = getUrlParameter('cf');
     if (cubicFtString.length === 0) { 
         alert('Missing query parameter for cubic feet: "cf"');
+        window.location.replace('order.html');
         return;
     }
     var cubicFtInt = parseInt(cubicFtString);
     if (cubicFtInt === NaN || cubicFtInt <= 0) { 
         alert('Query parameter for cubic feet must be a positive integer.');
+        window.location.replace('order.html');
         return;
     }
     var totalCentsInt = cubicFtInt * PRICE;
